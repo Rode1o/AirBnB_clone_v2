@@ -64,3 +64,7 @@ class FileStorage:
                 if value == obj:
                     del self.__objects[key]
                     break
+
+    def close(self):
+        """Call the reload method"""
+        self.reload()
